@@ -11,37 +11,22 @@
 <body>
 
 
-		 <s:property value="roe"/>
-		 <s:property value="roa"/>
-		 <s:property value="uriage_keijo_ratio"/>
-		 <s:property value="uriage_sori_ratio"/>
-		 <s:property value="uriage_eigyo_ratio"/>
+		 <s:property value="roe"/><br>
+		 <s:property value="roa"/><br>
+		 <s:property value="uriage_keijo_ratio"/><br>
+		 <s:property value="uriage_sori_ratio"/><br>
+		 <s:property value="uriage_eigyo_ratio"/><br>
 
-		 <s:property value="total_kaiten_ratio"/>
-		 <s:property value="zaiko_kaiten_ratio"/>
+		 <s:property value="total_kaiten_ratio"/><br>
+		 <s:property value="zaiko_kaiten_ratio"/><br>
 
-		 <s:property value="ryudo_ratio"/>
-		 <s:property value="zikoshi_ratio"/>
-		 <s:property value="kotei_ratio"/>
-		 <s:property value="fusai_ratio"/>
+		 <s:property value="ryudo_ratio"/><br>
+		 <s:property value="zikoshi_ratio"/><br>
+		 <s:property value="kotei_ratio"/><br>
+		 <s:property value="fusai_ratio"/><br>
 
 
 
-<!--
-<input type="double" name="roe" value=""/>
- -->
-=======
-<s:property value="roe"/>
-<s:property value="roa"/>
-<s:property value="uriage_keijo_ratio"/>
-<s:property value="uriage_sori_ratio"/>
-<s:property value="uriage_eigyo_ratio"/>
-<s:property value="total_kaiten_ratio"/>
-<s:property value="zaiko_kaiten_ratio"/>
-<s:property value="ryudo_ratio"/>
-<s:property value="zikoshi_ratio"/>
-<s:property value="kotei_ratio"/>
-<s:property value="fusai_ratio"/>
 
 </body>
 </html>

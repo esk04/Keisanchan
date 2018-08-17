@@ -7,26 +7,28 @@
 <constant name="struts.devMode" value="true"/>
 <package name="com.internousdev.keisanchan.action" extends="struts-default">
 
-<!-- <action name="GoHomeAction" class="com.internousdev.keisanchan.action.GoHomeAction" method="execute"> -->
-<!-- <result name="success">home.jsp</result> -->
-<!-- </action> -->
+<action name="GoHomeAction" class="com.internousdev.keisanchan.action.GoHomeAction" method="execute">
+<result name="success">home.jsp</result>
+</action>
 
 
+<<<<<<< HEAD
 
 <!-- <action name="HomeAction" class="com.internousdev.keisanchan.action.HomeAction" method="execute"> -->
 <!-- <result name="login">login.jsp</result> -->
 <!-- <result name="success">buyItem.jsp</result> -->
 <!-- </action> -->
 
-<!-- <action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute"> -->
-<!-- <result name="success">keisanResult.jsp</result> -->
-<!-- <result name="error">keisan.jsp</result> -->
-<!-- </action> -->
+<action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute">
+<result name="success">keisanResult.jsp</result>
+<result name="error">keisan.jsp</result>
+</action>
 
 <!-- <action name="LoginAction" class="com.internousdev.keisanchan.action.LoginAction" method="execute"> -->
 <!-- <result name="success">buyItem.jsp</result> -->
 <!-- <result name="error">login.jsp</result> -->
 <!-- </action> -->
+=======
 <action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute">
 <result name="success">keisanResult.jsp</result>
 </action>
@@ -75,4 +77,4 @@
 <!-- </action> -->
 
 </package>
-</struts>
+</struts>?>
