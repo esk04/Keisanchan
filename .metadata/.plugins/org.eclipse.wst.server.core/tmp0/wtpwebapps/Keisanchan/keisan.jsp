@@ -73,6 +73,7 @@
 
 
  <s:form action="KeisanAction">
+ <h1>会社名<input type="value" name="company_name" value=""></h1>
 <p>当期純利益<input type="number" name="toki" value=""><p/>
 <br><p>自己資本<input type="number" name="zikoshi" value=""></p>
 <br><p>経常利益<input type="number" name="keijo" value=""></p>
