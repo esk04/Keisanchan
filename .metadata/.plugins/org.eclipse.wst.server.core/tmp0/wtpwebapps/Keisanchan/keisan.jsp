@@ -89,6 +89,8 @@
 <br><p>固定資産<input type="number" name="kotei_assets" value=""></p>
 <br><p>負債合計<input type="number" name="total_fusai" value=""></p>
 
+<img src="img/Keisanchan.JPG" alt="写真" title"けいさんちゃん">
+
 
 
 

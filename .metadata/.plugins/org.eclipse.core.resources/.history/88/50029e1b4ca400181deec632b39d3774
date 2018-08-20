@@ -43,7 +43,7 @@ public class KeisanResultDAO {
 
 	}
 
-	public void keisan(String string, String string2, double parseDouble, double parseDouble2,
+	public void keisanResult(String string, String string2, double parseDouble, double parseDouble2,
 			double parseDouble3, double parseDouble4, double parseDouble5, double parseDouble6, double parseDouble7,
 			double parseDouble8, double parseDouble9, double parseDouble10) {
 		// TODO 自動生成されたメソッド・スタブ

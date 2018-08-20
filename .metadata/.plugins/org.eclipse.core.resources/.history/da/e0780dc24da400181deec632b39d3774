@@ -27,7 +27,7 @@ public class KeisanResultAction extends ActionSupport implements SessionAware{
 
 	public String execute() throws SQLException{
 		keisanResultDAO.keisan(session.get("company_name").toString(),
-				Double.parseDouble(session.get("roe").toString()),
+				session.get("roe").toString(),
 				Double.parseDouble(session.get("roa").toString()),
 				Double.parseDouble(session.get("uriage_keijo_ratio").toString()),
 				Double.parseDouble(session.get("uriage_sori_ratio").toString()),
