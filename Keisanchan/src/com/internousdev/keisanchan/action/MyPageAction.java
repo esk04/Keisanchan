@@ -34,7 +34,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		String  kotei_ratio= session.get("kotei_ratio").toString();
 		String  fusai_ratio= session.get("fusai_ratio").toString();
 
-		myPageList = myPageDAO.getMyPageUserInfo(roe, roa, uriage_keijo_ratio, uriage_sori_ratio, uriage_eigyo_ratio, total_kaiten_ratio, zaiko_kaiten_ratio, ryudo_ratio, zikoshi_ratio, kotei_ratio, fusai_ratio);
+		myPageList = myPageDAO.keisanResultHistoryDelete(roe, roa, uriage_keijo_ratio, uriage_sori_ratio, uriage_eigyo_ratio, total_kaiten_ratio, zaiko_kaiten_ratio, ryudo_ratio, zikoshi_ratio, kotei_ratio, fusai_ratio);
 
 	}else if(deleteFlg.equals("1")){
 		delete();

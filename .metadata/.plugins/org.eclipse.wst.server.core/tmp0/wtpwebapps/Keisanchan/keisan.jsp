@@ -73,7 +73,7 @@
 
 
  <s:form action="KeisanAction">
- <h1>会社名<input type="value" name="company_name" value=""></h1>
+ <h1>会社名<input type="text" name="company_name" value=""></h1>
 <p>当期純利益<input type="number" name="toki" value=""><p/>
 <br><p>自己資本<input type="number" name="zikoshi" value=""></p>
 <br><p>経常利益<input type="number" name="keijo" value=""></p>
@@ -89,7 +89,6 @@
 <br><p>固定資産<input type="number" name="kotei_assets" value=""></p>
 <br><p>負債合計<input type="number" name="total_fusai" value=""></p>
 
-<img src="img/Keisanchan.JPG" alt="写真" title"けいさんちゃん">
 
 
 
