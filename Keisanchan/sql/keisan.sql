@@ -1,9 +1,9 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists keisanchan;
+drop database if exists keisanchan2;
 
-create database if not exists keisanchan;
-use keisanchan;
+create database if not exists keisanchan2;
+use keisanchan2;
 
 drop table if exists login_user_transaction;
 
@@ -25,6 +25,7 @@ create table keisan_transaction(
   uriage_sori_ratio double,
   uriage_eigyo_ratio double,
   total_kaiten_ratio double,
+  zaiko_kaiten_ratio double,
   ryudo_ratio double,
   zikoshi_ratio double,
   kotei_ratio double,

@@ -14,7 +14,7 @@ public class MyPageDAO {
 	private DBConnector dbConnector = new DBConnector();
 	private Connection connection = dbConnector.getConnection();
 
-	public ArrayList<MyPageDTO> getMyPageUserInfo (String company_name, double roa, double roe, double uriage_keijo_ratio, double uriage_sori_ratio, double uriage_eigyo_ratio, double total_kaiten_ratio, double zaiko_kaiten_ratio, double ryudo_ratio, double zikoshi_ratio, double kotei_ratio, double fusai_ratio)throws SQLException{
+	public ArrayList<MyPageDTO> getKeisanResultInfo (String company_name, double roa, double roe, double uriage_keijo_ratio, double uriage_sori_ratio, double uriage_eigyo_ratio, double total_kaiten_ratio, double zaiko_kaiten_ratio, double ryudo_ratio, double zikoshi_ratio, double kotei_ratio, double fusai_ratio)throws SQLException{
 		ArrayList<MyPageDTO> myPageDTO = new ArrayList<MyPageDTO>();
 		String sql="Select kt.company_name, kt.roe, kt.roa,kt.uriage_keijo_ratio, kt.uriage_sori_ratio, kt.uriage_sori_ratio, kt.uriage_eigyo_ratio, kt.total_kaiten_ratio, kt.zaiko_kaiten_ratio, kt.ryudo_ratio, kt.zikoshi_ratio, kt.kotei_ratio, kt.fusai_ratio FROM keisan_transaction kt ";
 
