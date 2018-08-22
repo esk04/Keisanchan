@@ -22,7 +22,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 			return ERROR;
 			}
 			if(deleteFlg == null) {
-		String roe = session.get("roe").toString();
+		String	roe = session.get("roe").toString();
 		String  roa= session.get("roa").toString();
 		String  uriage_keijo_ratio= session.get("uriage_keijo_ratio").toString();
 		String  uriage_sori_ratio= session.get("uriage_sori_ratio").toString();
@@ -87,4 +87,4 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 	}
 
 }
-8月20日 17:12
+

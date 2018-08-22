@@ -2,7 +2,9 @@ package com.internousdev.keisanchan.dto;
 
 public class MyPageDTO {
 
-public double roe;
+	public String company_name;
+
+	public double roe;
 
 	public double roa;
 
@@ -10,7 +12,7 @@ public double roe;
 
 	public double uriage_sori_ratio;
 
-	public double uriage_eigyo_ratioi;
+	public double uriage_eigyo_ratio;
 
 	public double total_kaiten_ratio;
 
@@ -24,15 +26,11 @@ public double roe;
 
 	public double fusai_ratio;
 
-
-
-	public string company_name;
-
-	public string getCompany_name() {
+	public String getCompany_name() {
 		return company_name;
 	}
 
-	public void setCompany_name(string company_name) {
+	public void setCompany_name(String company_name) {
 		this.company_name = company_name;
 	}
 
@@ -69,11 +67,11 @@ public double roe;
 	}
 
 	public double getUriage_eigyo_ratioi() {
-		return uriage_eigyo_ratioi;
+		return uriage_eigyo_ratio;
 	}
 
-	public void setUriage_eigyo_ratioi(double uriage_eigyo_ratioi) {
-		this.uriage_eigyo_ratioi = uriage_eigyo_ratioi;
+	public void setUriage_eigyo_ratio(double uriage_eigyo_ratio) {
+		this.uriage_eigyo_ratio = uriage_eigyo_ratio;
 	}
 
 	public double getTotal_kaiten_ratio() {
