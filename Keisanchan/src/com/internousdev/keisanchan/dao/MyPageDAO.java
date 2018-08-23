@@ -14,15 +14,28 @@ public class MyPageDAO {
 	private DBConnector dbConnector = new DBConnector();
 	private Connection connection = dbConnector.getConnection();
 
-	public ArrayList<MyPageDTO> getKeisanResultInfo (String company_name, double roa, double roe, double uriage_keijo_ratio, double uriage_sori_ratio, double uriage_eigyo_ratio, double total_kaiten_ratio, double zaiko_kaiten_ratio, double ryudo_ratio, double zikoshi_ratio, double kotei_ratio, double fusai_ratio)throws SQLException{
+	public ArrayList<MyPageDTO> getKeisanResultInfo (String company_name, double roe, double roa, double uriage_keijo_ratio, double uriage_sori_ratio, double uriage_eigyo_ratio, double total_kaiten_ratio, double zaiko_kaiten_ratio, double ryudo_ratio, double zikoshi_ratio, double kotei_ratio, double fusai_ratio)throws SQLException{
 		ArrayList<MyPageDTO> myPageDTO = new ArrayList<MyPageDTO>();
-		String sql="Select kt.company_name, kt.roe, kt.roa,kt.uriage_keijo_ratio, kt.uriage_sori_ratio, kt.uriage_sori_ratio, kt.uriage_eigyo_ratio, kt.total_kaiten_ratio, kt.zaiko_kaiten_ratio, kt.ryudo_ratio, kt.zikoshi_ratio, kt.kotei_ratio, kt.fusai_ratio FROM keisan_transaction kt ";
+		String sql="Select kt.company_name,"
+				+ " kt.roe,"
+				+ " kt.roa,"
+				+ " kt.uriage_keijo_ratio,"
+				+ " kt.uriage_sori_ratio, "
+				+ " kt.uriage_eigyo_ratio,"
+				+ " kt.total_kaiten_ratio,"
+				+ " kt.zaiko_kaiten_ratio, "
+				+ " kt.ryudo_ratio,"
+				+ " kt.zikoshi_ratio,"
+				+ " kt.kotei_ratio, "
+				+ " kt.fusai_ratio "
+				+ " FROM keisan_transaction kt "
+				+ " LEFT JOIN login_user_transaction as lut";
 
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, company_name);
 			preparedStatement.setDouble(2, roe);
-			preparedStatement.setDouble(3, roe);
+			preparedStatement.setDouble(3, roa);
 			preparedStatement.setDouble(4, uriage_keijo_ratio);
 			preparedStatement.setDouble(5, uriage_sori_ratio);
 			preparedStatement.setDouble(6, uriage_eigyo_ratio);
@@ -61,7 +74,7 @@ public class MyPageDAO {
 	}
 
 	public int keisanResultHistoryDelete(String company_name, double roe, double roa, double uriage_keijo_ratio, double uriage_sori_ratio, double uriage_eigyo_ratio, double total_kaiten_ratio, double zaiko_kaiten_ratio, double ryudo_ratio, double zikoshi_ratio, double kotei_ratio, double fusai_ratio) throws SQLException{
-		String sql="DELETE FROM user_buy_item_transaction WHERE item_transaction_id = ? AND user_master_id = ?";
+		String sql="DELETE FROM keisan_transaction";
 
 		PreparedStatement preparedStatement;
 		int result = 0;

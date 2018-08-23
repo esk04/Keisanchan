@@ -3,6 +3,7 @@ package com.internousdev.keisanchan.action;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class KeisanAction extends ActionSupport{
+	private String company_name;
 
 	private double toki;
 	private double zikoshi;
@@ -249,6 +250,14 @@ public class KeisanAction extends ActionSupport{
 
 		public void setFusai_ratio(double fusai_ratio) {
 			this.fusai_ratio = fusai_ratio;
+		}
+
+		public String getCompany_name() {
+			return company_name;
+		}
+
+		public void setCompany_name(String company_name) {
+			this.company_name = company_name;
 		}
 
 
