@@ -19,8 +19,10 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 
 
 	public String execute() throws SQLException {
+
+		String result = ERROR;
 		if (!session.containsKey("id")) {
-			return ERROR;
+			result = SUCCESS;
 		}
 		if(deleteFlg == null) {
 			String company_name = session.get("company_name").toString();
@@ -35,14 +37,15 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 			double zikoshi_ratio = Double.parseDouble(session.get("zikoshi_ratio").toString());
 			double kotei_ratio = Double.parseDouble(session.get("kotei_ratio").toString());
 			double fusai_ratio = Double.parseDouble(session.get("fusai_ratio").toString());
-
 			myPageList = myPageDAO.getKeisanResultInfo(company_name, roe, roa, uriage_keijo_ratio, uriage_sori_ratio, uriage_eigyo_ratio, total_kaiten_ratio, zaiko_kaiten_ratio, ryudo_ratio, zikoshi_ratio, kotei_ratio, fusai_ratio);
+
+
 		} else if(deleteFlg.equals("1")) {
 					delete();
 
 		}
 
-		String result = SUCCESS;
+
 		return result;
 	}
 

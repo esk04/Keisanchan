@@ -17,7 +17,17 @@ public class KeisanResultDAO {
 		DBConnector dbConnector = new DBConnector();
 
 		Connection connection = dbConnector.getConnection();
-		String sql = "INSERT INTO keisan_transaction ( company_name, roe, roa, uriage_keijo_ratio, uriage_sori_ratio, uriage_eigyo_ratio, total_kaiten_ratio, zaiko_kaiten_ratio, ryudo_ratio, zikoshi_ratio, kotei_ratio, fusai_ratio) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO keisan_transaction ( company_name, roe, "
+				+ "roa, uriage_keijo_ratio, "
+				+ "uriage_sori_ratio, "
+				+ "uriage_eigyo_ratio, "
+				+ "total_kaiten_ratio, "
+				+ "zaiko_kaiten_ratio, "
+				+ "ryudo_ratio, "
+				+ "zikoshi_ratio, "
+				+ "kotei_ratio, "
+				+ "fusai_ratio) "
+				+ "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		try {
 
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);

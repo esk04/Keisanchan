@@ -4,4 +4,7 @@
 <fullyQualifiedTypeName name="com.internousdev.keisanchan.dao.LoginDAO"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.internousdev.keisanchan.dao.KeisanResultDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.keisanchan.dao.MyPageDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.keisanchan.dto.MyPageDTO"/>
 </qualifiedTypeNameHistroy>
