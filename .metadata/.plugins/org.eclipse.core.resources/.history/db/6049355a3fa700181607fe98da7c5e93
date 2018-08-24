@@ -1,0 +1,21 @@
+package com.internousdev.keisanchan.dto;
+
+public class KeisanResultDTO {
+
+
+	private double roe;
+	private double roa;
+	private double uriage_keijo_ratio;
+	private double uriage_sori_ratio;
+	private double uriage_eigyo_ratio;
+
+	private double total_kaiten_ratio;
+	private double zaiko_kaiten_ratio;
+
+	private double ryudo_ratio;
+	private double zikoshi_ratio;
+	private double kotei_ratio;
+	private double fusai_ratio;
+
+
+}

@@ -44,3 +44,7 @@
 0:0:0:0:0:0:0:1 - - [23/Aug/2018:17:30:44 +0900] "POST /Keisanchan/KeisanResultAction.action HTTP/1.1" 200 2945
 0:0:0:0:0:0:0:1 - - [23/Aug/2018:17:30:55 +0900] "GET /Keisanchan/myPage.jsp HTTP/1.1" 200 1913
 0:0:0:0:0:0:0:1 - - [23/Aug/2018:17:30:55 +0900] "GET /Keisanchan/img/keisan.PNG HTTP/1.1" 304 -
+127.0.0.1 - - [23/Aug/2018:17:52:48 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [23/Aug/2018:17:52:50 +0900] "GET /Keisanchan/ HTTP/1.1" 200 2945
+0:0:0:0:0:0:0:1 - - [23/Aug/2018:17:53:06 +0900] "POST /Keisanchan/KeisanAction.action HTTP/1.1" 200 2940
+0:0:0:0:0:0:0:1 - - [23/Aug/2018:17:53:13 +0900] "POST /Keisanchan/MyPageAction.action HTTP/1.1" 200 9114
