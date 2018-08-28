@@ -9,6 +9,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class KeisanAction extends ActionSupport implements SessionAware{
 
+	private String login_id;
 	private String company_name;
 	private double toki;
 	private double zikoshi;
@@ -56,7 +57,7 @@ public class KeisanAction extends ActionSupport implements SessionAware{
 		kotei_ratio = roundRatio(kotei_assets/zikoshi);
 		fusai_ratio = roundRatio(total_fusai/zikoshi);
 
-
+		session.put("login_id", login_id);
 		session.put("company_name", company_name);
 		session.put("roe",roe);
 		session.put("roa",roa);
@@ -286,6 +287,14 @@ public class KeisanAction extends ActionSupport implements SessionAware{
 
 	public void setCompany_name(String company_name) {
 		this.company_name = company_name;
+	}
+
+	public String getLogin_id() {
+		return login_id;
+	}
+
+	public void setLogin_id(String login_id) {
+		this.login_id = login_id;
 	}
 
 	@Override

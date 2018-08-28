@@ -13,61 +13,61 @@
 
 
 
+
 <action name="HomeAction" class="com.internousdev.keisanchan.action.HomeAction" method="execute">
 <result name="login">login.jsp</result>
-<result name="success">home.jsp</result>
+<result name="success">keisan.jsp</result>
 </action>
 
-<action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute">
-<result name="success">keisanResult.jsp</result>
-<result name="error">keisan.jsp</result>
-</action>
-
-<action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute">
-<result name="success">keisanResult.jsp</result>
-</action>
-
-<action name="KeisanResultAction" class="com.internousdev.keisanchan.action.KeisanResultAction" method="execute">
-<result name="success">myPage.jsp</result>
-<result name="error">keisanResult.jsp</result>
-</action>
-
+<!-- <action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute"> -->
+<!-- <result name="success">keisan.jsp</result> -->
+<!-- <result name="error">keisan.jsp</result> -->
+<!-- </action> -->
 
 <action name="LoginAction" class="com.internousdev.keisanchan.action.LoginAction" method="execute">
 <result name="success">keisan.jsp</result>
 <result name="error">login.jsp</result>
 </action>
 
+<action name="KeisanAction" class="com.internousdev.keisanchan.action.KeisanAction" method="execute">
+<result name="success">keisanResult.jsp</result>
+</action>
+
+<!-- <action name="LoginAction" class="com.internousdev.keisanchan.action.LoginAction" method="execute"> -->
+<!-- <result name="success">buyItem.jsp</result> -->
+<!-- <result name="error">login.jsp</result> -->
+<!-- </action> -->
+
+<action name="KeisanResultAction" class="com.internousdev.keisanchan.action.KeisanResultAction" method="execute">
+<result name="success">keisan.jsp</result>
+<result name="error">keisanResult.jsp</result>
+</action>
 
 <action name="UserCreateAction" class="com.internousdev.keisanchan.action.UserCreateAction" method="execute">
-<result name="success">userCreate.jsp</result>
+<result name="success">createUser.jsp</result>
 <result name="back">login.jsp</result>
 </action>
 
 <action name="UserCreateConfirmAction" class="com.internousdev.keisanchan.action.UserCreateConfirmAction" method="execute">
-<result name="success">userCreateConfirm.jsp</result>
-<result name="error">userCreate.jsp</result>
+<result name="success">createUserConfirm.jsp</result>
+<result name="error">createUser.jsp</result>
 </action>
 
 <action name="UserCreateCompleteAction" class="com.internousdev.keisanchan.action.UserCreateCompleteAction" method="execute">
-<result name="success">userCreateComplete.jsp</result>
+<result name="success">createUserComplete.jsp</result>
 </action>
 
-<!-- <action name="BuyItemAction" class="com.internousdev.ecsite.keisanchan.BuyItemAction" method="execute"> -->
-<!-- <result name="success">buyItemConfirm.jsp</result> -->
-<!-- <result name="error">buyItem.jsp</result> -->
-<!-- </action> -->
-
-<!-- <action name="BuyItemConfirmAction" class="com.internousdev.keisanchan.action.BuyItemConfirmAction" method="execute"> -->
-<!-- <result name="success">buyItemComplete.jsp</result> -->
-<!-- <result name="back">buyItem.jsp</result> -->
-<!-- </action> -->
 
 
+
+
+<!-- <action name="BuyItemCompleteAction" class="com.internousdev.keisanchan.action.BuyItemCompleteAction" method="execute"> -->
+<!-- <result name="success">home.jsp</result> -->
+<!--  </action> -->
 
 <action name ="MyPageAction" class="com.internousdev.keisanchan.action.MyPageAction" method="execute">
 <result name ="success">myPage.jsp</result>
-<result name ="error">keisan.jsp</result>
+<result name="error">keisan.jsp</result>
 </action>
 
 <!-- <action name ="LogoutAction" class="com.internousdev.keisanchan.action.LogoutAction" method="execute"> -->

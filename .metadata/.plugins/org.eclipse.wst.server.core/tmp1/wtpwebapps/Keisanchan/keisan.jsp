@@ -35,7 +35,7 @@
    #header{
      width:100%;
      height:80px;
-     background-color:#1655FF;
+     background-color:black;
    }
    #main{
      width:100%;
@@ -45,7 +45,7 @@
    #footer{
      width:100%;
      height:80px;
-     background-color:#1655FF;
+     background-color:black;
      clear:both;
    }
    #text-center{
@@ -68,10 +68,6 @@
 
        <br/>
 
-       <s:form action="KeisanAction">
-
-
-
  <s:form action="KeisanAction">
  <h1>会社名<input type="text" name="company_name" value=""></h1>
 <p>当期純利益<input type="number" name="toki" value=""><p/>
@@ -89,17 +85,14 @@
 <br><p>固定資産<input type="number" name="kotei_assets" value=""></p>
 <br><p>負債合計<input type="number" name="total_fusai" value=""></p>
 
-
-
-
-
-
-
 <p><input type="submit" value="計算する"> <input type="reset" value="リセット"></p>
 </s:form>
 
 
+<s:form action="MyPageAction">
+<s:submit value="マイページ"/>
 </s:form>
+
 
        <div id="text-link">
 

@@ -12,7 +12,7 @@ public class KeisanResultDAO {
 
 
 
-	public int keisan( String loginUserId, String company_name, String roe, String roa, String uriage_keijo_ratio, String uriage_sori_ratio, String uriage_eigyo_ratio, String total_kaiten_ratio, String zaiko_kaiten_ratio, String ryudo_ratio, String zikoshi_ratio, String kotei_ratio, String fusai_ratio) throws SQLException {
+	public int keisan( String login_id, String company_name, String roe, String roa, String uriage_keijo_ratio, String uriage_sori_ratio, String uriage_eigyo_ratio, String total_kaiten_ratio, String zaiko_kaiten_ratio, String ryudo_ratio, String zikoshi_ratio, String kotei_ratio, String fusai_ratio) throws SQLException {
 		int count = 0;
 		DBConnector dbConnector = new DBConnector();
 
@@ -21,7 +21,7 @@ public class KeisanResultDAO {
 		try {
 
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
-			preparedStatement.setString(1, loginUserId);
+			preparedStatement.setString(1, login_id);
 			preparedStatement.setString(2, company_name);
 			preparedStatement.setString(3, roe);
 			preparedStatement.setString(4, roa);
