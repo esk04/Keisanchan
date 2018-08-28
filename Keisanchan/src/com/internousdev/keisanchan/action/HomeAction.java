@@ -22,7 +22,7 @@ public class HomeAction extends ActionSupport implements SessionAware{
 			session.put("roa",myPageDTO.getRoa());
 			session.put("uriage_keijo_ratio",myPageDTO.getUriage_keijo_ratio());
 			session.put("uriage_sori_ratio",myPageDTO.getUriage_sori_ratio());
-			session.put("uriage_eigyo_ratio",myPageDTO.getUriage_eigyo_ratioi());
+			session.put("uriage_eigyo_ratio",myPageDTO.getUriage_eigyo_ratio());
 			session.put("total_kaiten_ratio",myPageDTO.getTotal_kaiten_ratio());
 			session.put("zaiko_kaiten_ratio",myPageDTO.getZaiko_kaiten_ratio());
 			session.put("ryudo_ratio",myPageDTO.getRyudo_ratio());
