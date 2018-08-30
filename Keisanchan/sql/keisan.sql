@@ -1,9 +1,9 @@
 set names utf8;
 set foreign_key_checks = 0;
-drop database if exists keisanchan2;
+drop database if exists keisanchan0;
 
-create database if not exists keisanchan2;
-use keisanchan2;
+create database if not exists keisanchan0;
+use keisanchan0;
 
 drop table if exists login_user_transaction;
 
