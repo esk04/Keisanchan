@@ -76,7 +76,7 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 
 
 	public void delete()throws SQLException{
-		//Object login_idObject = session.get("loin_id");
+		Object login_idObject = session.get("loin_id");
 
 		String login_id = session.get("loin_id").toString();
 		String company_name = session.get("company_name").toString();
