@@ -36,18 +36,18 @@ public class MyPageDAO {
 		try{
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1, login_id);
-//			preparedStatement.setString(2, company_name);
-//			preparedStatement.setString(3, roe);
-//			preparedStatement.setString(4, roe);
-//			preparedStatement.setString(5, uriage_keijo_ratio);
-//			preparedStatement.setString(6, uriage_sori_ratio);
-//			preparedStatement.setString(7, uriage_eigyo_ratio);
-//			preparedStatement.setString(8, total_kaiten_ratio);
-//			preparedStatement.setString(9, zaiko_kaiten_ratio);
-//			preparedStatement.setString(10, ryudo_ratio);
-//			preparedStatement.setString(11, zikoshi_ratio);
-//			preparedStatement.setString(12,  kotei_ratio);
-//			preparedStatement.setString(13, fusai_ratio);
+			preparedStatement.setString(2, company_name);
+			preparedStatement.setString(3, roe);
+			preparedStatement.setString(4, roe);
+			preparedStatement.setString(5, uriage_keijo_ratio);
+			preparedStatement.setString(6, uriage_sori_ratio);
+			preparedStatement.setString(7, uriage_eigyo_ratio);
+			preparedStatement.setString(8, total_kaiten_ratio);
+			preparedStatement.setString(9, zaiko_kaiten_ratio);
+			preparedStatement.setString(10, ryudo_ratio);
+			preparedStatement.setString(11, zikoshi_ratio);
+			preparedStatement.setString(12,  kotei_ratio);
+			preparedStatement.setString(13, fusai_ratio);
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			while(resultSet.next()){

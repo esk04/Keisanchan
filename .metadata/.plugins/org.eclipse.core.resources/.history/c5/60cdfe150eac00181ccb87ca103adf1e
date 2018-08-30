@@ -20,7 +20,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		String result = ERROR;
 		System.out.println("----LoginAction");
 		System.out.println(loginUserId);
-
+		System.out.println("-------------------");
 		loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
 		session.put("loginUserId",loginDTO);
 

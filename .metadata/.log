@@ -3738,3 +3738,6 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.eclipse.datatools.connectivity.internal.ManagedConnection.createConnection(ManagedConnection.java:166)
 	at org.eclipse.datatools.connectivity.internal.CreateConnectionJob.run(CreateConnectionJob.java:56)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-08-30 13:22:18.726
+!MESSAGE サーバー ローカル・ホスト の Tomcat8 (Java8) は始動に失敗しました。

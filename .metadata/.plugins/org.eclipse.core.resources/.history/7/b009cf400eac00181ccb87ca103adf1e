@@ -56,10 +56,8 @@ public class KeisanAction extends ActionSupport implements SessionAware{
 		zikoshi_ratio = roundRatio(zikoshi/total_assets);
 		kotei_ratio = roundRatio(kotei_assets/zikoshi);
 		fusai_ratio = roundRatio(total_fusai/zikoshi);
-		System.out.println("---KeisanAction");
-		System.out.println(session.get("login_id").toString());
-		System.out.println("------------------");
-//		session.put("login_id", login_id);
+
+		session.put("login_id", login_id);
 		session.put("company_name", company_name);
 		session.put("roe",roe);
 		session.put("roa",roa);
