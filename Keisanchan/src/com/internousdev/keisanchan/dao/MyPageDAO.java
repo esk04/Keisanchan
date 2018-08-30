@@ -19,6 +19,7 @@ public class MyPageDAO {
 		 Connection connection = dbConnector.getConnection();
 		 List<MyPageDTO> myPageDTO = new ArrayList<MyPageDTO>();
 		String sql="Select company_name , "
+				+ "login_id,"
 				+ "roe,"
 				+ "roa,"
 				+ "uriage_keijo_ratio,"
@@ -56,7 +57,7 @@ public class MyPageDAO {
 				dto.setCompany_name(resultSet.getString("company_name"));
 				dto.setRoe(resultSet.getString("roe"));
 				dto.setRoa(resultSet.getString("roa"));
-				dto.setUriage_keijo_ratio(resultSet.getString("uriag_keijo_ratio"));
+				dto.setUriage_keijo_ratio(resultSet.getString("uriage_keijo_ratio"));
 				dto.setUriage_sori_ratio(resultSet.getString("uriage_sori_ratio"));
 				dto.setUriage_eigyo_ratio(resultSet.getString("uriage_eigyo_ratio"));
 				dto.setTotal_kaiten_ratio(resultSet.getString("total_kaiten_ratio"));
